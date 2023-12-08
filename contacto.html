@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="Assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/contacto.css">
+    <title>Charlie Maximus</title>
+  </head>
+  <body>
+    <header>
+      <h1>Charlie "Maximus"</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a class="active" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="contenedor">
+      <form>
+        <label for="Nombre">Nombre:</label>
+        <input
+          type="text"
+          id="Nombre"
+          name="Nombre"
+          placeholder="Escribe aqui tu nombre"
+          required
+          minlength="3"
+        />
+        <label for="apellido">Apellido:</label>
+        <input
+          type="text"
+          id="apellido"
+          name="apellido"
+          placeholder="Escribe aqui tu Apellido"
+          required
+          minlength="3"
+        />
+        <label for="mail">Email:</label>
+        <input
+          type="email"
+          name="mail"
+          id="mail"
+          placeholder="Escribi aqui tu mail"
+          required
+        />
+        <label for="pais">País</label>
+        <select name="pais" id="pais">
+          <option value="Argentina">Argentina</option>
+          <option value="Venezuela">Venezuela</option>
+          <option value="Bolivia">Bolivia</option>
+          <option value="Uruguay">Uruguay</option>
+          <option value="Perú">Perú</option>
+          <option value="Colombia">Colombia</option>
+          <option value="Ecuador">Ecuador</option>
+          <option value="Chile">Chile</option>
+          <option value="España">España</option>
+          <option value="Estados Unidos">Estados Unidos</option>
+          <option value="Mexico">México</option>
+          <option value="Canada">Canada</option>
+          <option value="Inglaterra">Inglaterra</option>
+          <option value="Otros">Otros</option>
+        </select>
+        <label for="comentario">Comentario:</label>
+        <textarea
+          name="comentario"
+          id="comentario"
+          placeholder="Escribe aqui tu comentario"
+        ></textarea>
+        <label for="motivo">Motivo de contacto</label>
+        <input type="radio" name="motivo" id="motivo" /><i>Comerciales</i>
+        <input type="radio" name="motivo" id="motivo" /><i>Sugerencias</i>
+        <input type="radio" name="motivo" id="motivo" /><i>Reclamos</i>
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+
+    <footer class="footer">
+      <p>
+        Derechos reservados 2023
+      </p>
+    </footer>
+  </body>
+</html>
